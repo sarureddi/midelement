@@ -1,0 +1,14 @@
+p1=input()
+q1=list(p1)
+r1=len(q1)
+if(r1%2!=0):
+     s1=r1/2
+     t1=round(s1)
+     q1[t1]='*'
+     print(*q1,sep="")
+else:
+    s1=r1/2
+    t1=round(s1)
+    q1[t1-1]='*'
+    q1[t1]='*'
+    print(*q1,sep="")
